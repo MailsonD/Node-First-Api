@@ -1,3 +1,28 @@
 {
-    "type": "module"
+  "name": "nodejs-frist-api",
+  "version": "1.0.0",
+  "description": "A RESTful API created with node and Typescript ",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.ts",
+    "build": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MailsonD/NodeJs-Frist-Api.git"
+  },
+  "author": "MailsonD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MailsonD/NodeJs-Frist-Api/issues"
+  },
+  "homepage": "https://github.com/MailsonD/NodeJs-Frist-Api#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^12.11.7",
+    "nodemon": "^1.19.4",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  }
 }
