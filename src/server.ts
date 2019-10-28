@@ -1,3 +1,4 @@
-const teste = 6;
+import app from './app';
 
-console.log(teste);
+app.listen(8100);
+
