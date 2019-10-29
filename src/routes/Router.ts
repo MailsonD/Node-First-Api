@@ -1,8 +1,14 @@
-import express from 'express';
-import HelloController from '../controllers/HelloController';
+import Router from 'express';
+import helloController from '../controllers/HelloController';
+import userController from '../controllers/UsersController';
 
-export function registerRoutes(app: express.Application): void {
-  app.get('/', HelloController.helloWorld);
-}
+const routes = Router();
+
+routes.get('/', helloController.helloWorld);
+routes.get('/users', userController.allUsers);
+routes.post('/users', userController.createUser);
+
+
+export default routes;
 
 
