@@ -9,8 +9,8 @@ class App {
     public constructor() {
       this.express = express();
       ConfigDatabase.config();
-      this.routes();
       this.middlewares();
+      this.routes();
     }
 
     private middlewares(): void {

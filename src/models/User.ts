@@ -1,9 +1,9 @@
-import {Schema, model} from 'mongoose';
+import Document from 'mongoose';
 
-const UserSchema = new Schema({
-  email: String,
-  name: String,
-  age: Number,
-});
+interface User extends Document {
+    email?: string;
+    name?: string;
+    age?: number;
+}
 
-export default model('User', UserSchema);
+export default User;
